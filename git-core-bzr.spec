@@ -12,7 +12,7 @@ License:	GPL v2
 Group:		Development/Tools
 #Source0Download: https://github.com/felipec/git-remote-bzr/tags
 # TODO use:
-#Source0:	https://github.com/felipec/git-remote-bzr/archive/v%{version}/%{name}-%{version}.tar.gz
+#Source0:	https://github.com/felipec/git-remote-bzr/archive/v%{version}/git-remote-bzr-%{version}.tar.gz
 Source0:	https://github.com/felipec/git-remote-bzr/archive/v%{version}.tar.gz
 # Source0-md5:	8cd2a654e9ef928bb89ff8524faaa8a1
 URL:		https://github.com/felipec/git-remote-bzr
@@ -21,6 +21,7 @@ BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.745
 %if %{with tests}
 BuildRequires:	bzr
+BuildRequires:	git-core
 %endif
 Requires:	bzr
 Requires:	git-core
